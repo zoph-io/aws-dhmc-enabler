@@ -1,0 +1,22 @@
+AWSTemplateFormatVersion: "2010-09-09"
+# Provided by zoph.io with ❤️
+Resources:
+  DHMCSSMRole:
+    Type: AWS::IAM::Role
+    Properties:
+      RoleName: AWSSystemsManagerDefaultEC2InstanceManagementRole
+      AssumeRolePolicyDocument:
+        Version: "2012-10-17"
+        Statement:
+          - Sid: "SSMAssumeRole"
+            Effect: Allow
+            Principal:
+              Service: ssm.amazonaws.com
+            Action: sts:AssumeRole
+      ManagedPolicyArns:
+        - arn:aws:iam::aws:policy/AmazonSSMManagedEC2InstanceDefaultPolicy
+      Tags:
+        - Key: Purpose
+          Value: Default Host Management Configuration (DHMC) - AWS SSM Enabler
+        - Key: Owner
+          Value: "Provided by zoph.io"
