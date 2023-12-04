@@ -33,9 +33,8 @@ Monitor the progress and verify that DHMC has been successfully applied to all A
 
 ## :information_source: More Info
 
-For more information about Default Host Management Configuration and how to enable it for your AWS Account, refer to the official AWS blog post:
-
-- https://aws.amazon.com/blogs/mt/enable-management-of-your-amazon-ec2-instances-in-aws-systems-manager-using-default-host-management-configuration/
+For more information about Default Host Management Configuration and how to enable it for your AWS Account, refer to the official AWS [blog post](https://aws.amazon.com/blogs/mt/enable-management-of-your-amazon-ec2-instances-in-aws-systems-manager-using-default-host-management-configuration/
+)
 
 ## :man_technologist: Credits
 
