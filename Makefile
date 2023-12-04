@@ -12,6 +12,7 @@ help:
 	@echo "  deploy-role       to deploy the SSM role"
 	@echo "  enable            to enable SSM on the account"
 	@echo "  status            to check the status of SSM on the account"
+	@echo "  info              to get info about the instances"
 	@echo "  desactivate       to desactivate SSM on the account"
 	@echo "  delete-role       to delete the SSM role"
 
@@ -52,6 +53,9 @@ status:
 		echo "✅ Success in region $$region"; \
 	fi; \
 	done
+
+info:
+	@aws ssm describe-instance-information --output table --query 'InstanceInformationList[*].[InstanceId,IamRole]'
 
 
 desactivate:
