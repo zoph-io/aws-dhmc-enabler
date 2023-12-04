@@ -8,6 +8,11 @@ DHMC provides a standard configuration for AWS Account, making it easier to impl
 
 This project aims to simplify the implementation of DHMC, ensuring efficient and secure management by setting the default IAM Role needed by SSM to work properly.
 
+## 📋 Requirements
+
+1. SSM Agent >= `3.2.532.0`
+2. EC2 instances must have network connectivity to the public Systems Manager service endpoints or to AWS PrivateLink VPC endpoints for Systems Manager.
+
 ## :hammer_and_wrench: How-to
 
 To implement Default Host Management Configuration on your AWS Account, follow these steps:

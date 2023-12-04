@@ -17,6 +17,8 @@ Resources:
         - arn:aws:iam::aws:policy/AmazonSSMManagedEC2InstanceDefaultPolicy
       Tags:
         - Key: Purpose
-          Value: Default Host Management Configuration (DHMC) - AWS SSM Enabler
+          Value: "Default Host Management Configuration - DHMC - AWS SSM Enabler"
         - Key: Owner
           Value: "Provided by zoph.io"
+        - Key: Sources
+          Value: "https://github.com/zoph-io/aws-dhmc-enabler"
