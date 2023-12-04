@@ -20,6 +20,7 @@ Modify the configuration files as needed to align with your organization's requi
 
 Execute the provided command to apply DHMC settings to all available AWS Regions:
 
+    $ make deploy-role
     $ make enable
 
 Monitor the progress and verify that DHMC has been successfully applied to all AWS Regions.
@@ -39,6 +40,6 @@ If you need more default security settings and alerting on your AWS Account, you
 
 ## :man_technologist: Credits
 
-- :pirate_flag: AWS Security Boutique: [zoph.io](https://zoph.io?utm_source=dhmc)
+- 🏴‍☠️ AWS Security Boutique: [zoph.io](https://zoph.io?utm_source=dhmc)
 - 💌 [AWS Security Digest Newsletter](https://awssecuritydigest.com?utm_source=dhmc)
-- :bird: X/Twitter: [zoph](https://twitter.com/zoph)
+- 𝕏 / Twitter: [zoph](https://twitter.com/zoph)
